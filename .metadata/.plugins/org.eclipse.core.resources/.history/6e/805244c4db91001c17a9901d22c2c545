@@ -1,0 +1,10 @@
+package com.brainstation23.automation.test.pages;
+
+public class AutomationTest {
+
+	public static void main(String[] args) {
+		String chromeDriverPath = "G:\\\\Imran\\\\Self Learning\\\\Selenium\\\\chromedriver_win32\\\\chromedriver.exe";
+
+	}
+
+}

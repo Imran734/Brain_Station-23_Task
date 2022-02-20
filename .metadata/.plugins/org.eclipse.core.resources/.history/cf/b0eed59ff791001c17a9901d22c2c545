@@ -1,0 +1,8 @@
+package com.brainstation23.automation.test.pages;
+
+import org.openqa.selenium.By;
+
+public class CasualDressesPage {
+	By dressItem = By.xpath("//*[@id=\"center_column\"]/ul/li/div/div[1]/div/a[1]/img")
+
+}

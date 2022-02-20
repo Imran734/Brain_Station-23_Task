@@ -1,0 +1,14 @@
+package com.brainstation23.automation.test.pages;
+
+public class CheckoutPage {
+	WebDriver driver;
+	
+	CheckoutPage(WebDriver driver){
+		this.driver=driver;
+	}
+	
+	public void checkOutProcess() {
+		
+	}
+
+}

@@ -1,0 +1,46 @@
+package com.brainstation23.automation.test.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class CheckoutPage {
+	WebDriver driver;
+	By checkoutFromSummary = By.xpath("//*[@id=\"center_column\"]/p[2]/a[1]/span");
+	By checkoutAddress = By.xpath("//*[@id=\"center_column\"]/form/p/button/span");
+	By shipping = By.xpath("//*[@id=\"form\"]/p/button/span");
+	By termOfService = By.id("cgv");
+	By paymentMethod = By.xpath("//*[@id=\"HOOK_PAYMENT\"]/div[2]/div/p/a");
+	By confirmOrder = By.xpath("//*[@id=\"cart_navigation\"]/button/span");
+	By confirmOrder = By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[2]/a");
+	
+	
+	CheckoutPage(WebDriver driver){
+		this.driver=driver;
+	}
+	
+	public void checkoutFromSummary() {
+		driver.findElement(checkoutFromSummary).click();
+		checkoutFromAddress();
+	}
+	
+	public void checkoutFromAddress() {
+		driver.findElement(checkoutAddress).click();
+		checkoutFromShipping();
+	}
+	
+	public void checkoutFromShipping() {
+		driver.findElement(shipping).click();
+		driver.findElement(termOfService).click();
+		checkoutAfterPayment();
+	}
+	
+	public void checkoutAfterPayment() {
+		driver.findElement(paymentMethod).click();
+		confirmingOrder();
+	}
+	
+	public void confirmingOrder() {
+		driver.findElement(paymentMethod).click();
+	}
+
+}

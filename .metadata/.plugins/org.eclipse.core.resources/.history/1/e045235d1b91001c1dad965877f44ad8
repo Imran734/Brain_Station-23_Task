@@ -1,0 +1,28 @@
+package com.brainstation23.automation.test;
+
+import org.openqa.selenium.WebDriver;
+
+public class User_BS23 {
+	String email;
+	String password;
+	WebDriver driver;
+	
+	public User_BS23(String email, String password) {
+		this.email=email;
+		this.password=password;
+	}
+	
+	public void loginCheck() {
+		driver.get(""http://automationpractice.com/index.php);
+	}
+
+	public static void main(String[] args) {
+		User_BS23 user1 = new User_BS23("imranafccl!gmail.com","123456");
+		System.setProperty("webdriver.chrome.driver", "G:\\Imran\\Self Learning\\Selenium\\chromedriver_win32\\chromedriver.exe")
+		user1.loginCheck();
+		//User_BS23 user2 = new User_BS23();
+		
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package com.brainstation23.automation.test.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class CheckoutPage {
+	WebDriver driver;
+	By checkoutFromSummary = By.xpath("//*[@id=\"center_column\"]/p[2]/a[1]/span");
+	By checkoutAddress = By.xpath("//*[@id=\"center_column\"]/form/p/button/span");
+	By shipping = By.xpath("//*[@id=\"form\"]/p/button/span");
+	By termOfService = By.id("cgv");
+	
+	
+	CheckoutPage(WebDriver driver){
+		this.driver=driver;
+	}
+	
+	public void checkoutFromSummary() {
+		driver.findElement(checkoutFromSummary);
+		
+	}
+	
+	public void checkoutFromAddress() {
+		driver.findElement(checkoutFromSummary);
+	}
+	
+	public void checkoutFromShipping() {
+		driver.findElement(checkoutFromSummary);
+	}
+	
+
+}

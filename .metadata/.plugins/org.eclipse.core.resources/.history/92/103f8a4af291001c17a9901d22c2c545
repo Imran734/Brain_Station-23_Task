@@ -1,0 +1,10 @@
+package com.brainstation23.automation.test.pages;
+
+import org.openqa.selenium.By;
+
+public class MyAccountPage {
+	By dress = By.xpath("//*[@id=\"block_top_menu\"]/ul/li[2]/a");
+	By casualDress = By.xpath("//*[@id=\"block_top_menu\"]/ul/li[2]/ul/li[1]/a");
+	
+
+}
